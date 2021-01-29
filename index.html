@@ -8,36 +8,41 @@
   </head>
   <body class="light">
     </div>
-    <!-- TradingView Widget BEGIN -->
+<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  <div id="tradingview_a83b5"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AMEX-ARKK/" rel="noopener" target="_blank"><span class="blue-text">ARKK Chart</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
   {
-  "symbols": [
-    {
-      "proName": "FOREXCOM:SPXUSD",
-      "title": "S&P 500"
-    },
-    {
-      "proName": "FOREXCOM:NSXUSD",
-      "title": "Nasdaq 100"
-    },
-    {
-      "description": "US Dollar",
-      "proName": "INDEX:DXY"
-    },
-    {
-      "description": "Dow Jones",
-      "proName": "FOREXCOM:DJI"
-    }
+  "width": 980,
+  "height": 610,
+  "symbol": "AMEX:ARKK",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "2",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_top_toolbar": true,
+  "allow_symbol_change": true,
+  "save_image": false,
+  "watchlist": [
+    "NYSE:BB",
+    "NASDAQ:CRSP",
+    "NASDAQ:TSLA",
+    "NYSE:GME",
+    "NASDAQ:ALNY",
+    "NYSE:ABBV",
+    "NYSE:JNJ",
+    "NASDAQ:ETSY"
   ],
-  "showSymbolLogo": true,
-  "colorTheme": "light",
-  "isTransparent": true,
-  "displayMode": "adaptive",
-  "locale": "en"
+  "details": true,
+  "container_id": "tradingview_a83b5"
 }
+  );
   </script>
 </div>
 <!-- TradingView Widget END -->
